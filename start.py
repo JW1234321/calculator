@@ -9,12 +9,12 @@ if __name__ == "__main__":
 
     while True:
         z = input("""Wpisz co chcesz zrobić:
-                + - dodawanie,
-                - - odejmowanie,
-                * - mnożenie,
-                / - dzielenie,
-                ** - pierwiastkowanie,
-                stop - zatrzymanie
+                "+" - dodawanie,
+                "-" - odejmowanie,
+                "*" - mnożenie,
+                "/" - dzielenie,
+                "**" - pierwiastkowanie,
+                "stop" - zatrzymanie
                 """)
         if z == 'stop':
             break
@@ -61,6 +61,6 @@ if __name__ == "__main__":
                 ** - pierwiastkowanie,
                 stop - zatrzymanie""")
             continue
-        print("Aktualny wynik to: %.f" % y)
+        print("Aktualny wynik to: %.2f" % y)
 
-    print("Wynik końcowy to: %.f" % y)
+    print("Wynik końcowy to: %.2f" % y)

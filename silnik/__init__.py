@@ -1,0 +1,1 @@
+__all__ = ["kalkulator"]  # kolejne pliki w pakiecie po przecinku w nawiasie

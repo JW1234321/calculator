@@ -9,12 +9,13 @@ if __name__ == "__main__":
 
     while True:
         z = input("""Wpisz co chcesz zrobić:
-                "+" - dodawanie,
-                "-" - odejmowanie,
-                "*" - mnożenie,
-                "/" - dzielenie,
-                "**" - pierwiastkowanie,
-                "stop" - zatrzymanie
+                "+"     -   dodawanie,
+                "-"     -   odejmowanie,
+                "*"     -   mnożenie,
+                "/"     -   dzielenie,
+                "**"    -   potęgowanie,
+                "stop"  -   zatrzymanie,
+                "x"     -   wróć do początku.
                 """)
         if z == 'stop':
             break
@@ -52,14 +53,19 @@ if __name__ == "__main__":
             print("""
             ...potęguję...
             """)
+        elif z == "x":
+            x = float(input("Wpisz liczbę: "))
+            y = x
         else:
             print("""Proszę dokonać prawidłowego wyboru:
-                + - dodawanie,
-                - - odejmowanie,
-                * - mnożenie,
-                / - dzielenie,
-                ** - pierwiastkowanie,
-                stop - zatrzymanie""")
+                "+"     -   dodawanie,
+                "-"     -   odejmowanie,
+                "*"     -   mnożenie,
+                "/"     -   dzielenie,
+                "**"    -   potęgowanie,
+                "stop"  -   zatrzymanie,
+                "x"     -   wróć do początku.
+                """)
             continue
         print("Aktualny wynik to: %.2f" % y)
 
